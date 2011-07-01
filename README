@@ -8,7 +8,7 @@ Module paths passed to require() for loading are specified relative to the curre
 
 [Example uses]
 
-// Synchronously load a module (from "http://www.currentdomain.com/currentpath/mymodules.js"):
+// Synchronously load a module (from the same path as the current HTML page):
 var mymodule = require("mymodule");
 
 // Synchronously load a module and automatically inject it into the global namespace as window.mymodule:
@@ -17,7 +17,7 @@ require("mymodule", false, null, true);
 // Asynchronously load a module and use a callback to be notified when it's loaded:
 require("mymodule", true, function(mymodule, result) {
   if(mymodule) {
-    // Do something with the module
+    // Do something with the module, like assigning it to a global or wider-scoped variable
   }
   else if(result === null) {
     // Module couldn't be loaded (HTTP 404 error, connection timeout, etc).
