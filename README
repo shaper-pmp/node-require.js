@@ -8,8 +8,17 @@ Module paths passed to require() for loading are specified relative to the curre
 
 [Example uses]
 
+First, include node-require.js in your page just like any other script:
+
+<script type="text/javascript" src="http://blahblahblah/node-require.js"></script>
+
+Then use one of the following to load a module:
+
 // Synchronously load a module (from the same path as the current HTML page):
 var mymodule = require("mymodule");
+
+// Synchronously load a module (from a "modules" directory that's a sibling of the current path):
+var mymodule = require("../modules/mymodule");
 
 // Synchronously load a module and automatically inject it into the global namespace as window.mymodule:
 require("mymodule", false, null, true);
