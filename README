@@ -10,7 +10,7 @@ Module paths passed to require() for loading are specified relative to the curre
 
 First, include node-require.js in your page just like any other script:
 
-<script type="text/javascript" src="http://blahblahblah/node-require.js"></script>
+<script type='text/javascript' src='http://blahblahblah/node-require.js'></script>
 
 Then use one of the following to load a module:
 
