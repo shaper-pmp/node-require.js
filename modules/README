@@ -1,0 +1,5 @@
+Sample node.js modules for testing node-require.js.
+
+sayhello_module: Simple proof-of-concept module which exposes a variable (greeting) and a method (sayhello).
+
+broken_module: Simple module containing invalid javascript code, used for testing error-handling.
