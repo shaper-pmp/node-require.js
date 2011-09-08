@@ -1,3 +1,5 @@
+# Introduction #
+
 The node-require.js script exposes a single global function - `require()`.
 
 This function may be called to load your node.js modules on the client-side (assuming, of course, that they don't depend on back-end node.js API calls that aren't available on the client-side).
@@ -6,7 +8,7 @@ This function may be called to load your node.js modules on the client-side (ass
 
 Module paths passed to `require()` for loading are specified relative to the current HTML page (eg, "./module_name" attempts to load a module called "module_name.js" from the same path as the page it's specified in).
 
-[Example uses]
+## Example uses ##
 
 First, include node-require.js in your page just like any other script:
 
