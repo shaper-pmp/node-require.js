@@ -41,3 +41,6 @@ Then use one of the following to load a module:
     // Asynchronously load a module and (assuming it loads successfully) automatically inject it into window.mymodule:
     require("mymodule", true, null, true);
 
+##Source Code##
+
+Source code is available [on github](https://github.com/shaper-pmp/node-require.js).
